@@ -1,0 +1,67 @@
+﻿@model List<demo1.Models.TinTuc>
+@{
+    ViewBag.Title = "NewsManage";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+
+<div class="container " style="margin-top: 30px;">
+    <div class="card">
+        <div class="card-header">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Quản lý tin tức</h3>
+                </div>
+                <div class="col-md-6">
+                    <a href="@Url.Action("CreateNews", "AdminNews")" class="btn btn-primary float-right">Thêm Mới</a>
+                </div>
+
+            </div>
+        </div>
+        <div class="card-body">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Ảnh tin</th>
+                        <th>Mã tin</th>
+                        <th>Mã nhân viên</th>
+                        <th>Ngày đăng</th>
+                        <th>Mô tả</th>
+                        <th>Nội dung</th>
+                        <th>Sửa</th>
+                        <th>Xóa</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td><img src="" alt="" height="100" width="100"></td>
+                            <td>@item.MaTin</td>
+                            <td>@item.MaNV</td>
+                            <td>@item.NgayDang</td>
+                            @{
+                                int maxLength = 50;
+                                var Noi_Dung = item.Noi_Dung.Length > maxLength ? item.Noi_Dung.Substring(0, maxLength) + "..." : item.Noi_Dung;
+                                var MoTa = item.MoTa.Length > maxLength ? item.MoTa.Substring(0, maxLength) + "..." : item.MoTa;
+                            }
+                            <td>@MoTa</td>
+                            <td>@Noi_Dung</td>
+                            <td>
+                                <a href="#" class="btn btn-info">Sửa</a>
+                            </td>
+                            <td>
+                                <a onclick="" href="" class="btn btn-danger">Xóa</a>
+                            </td>
+                        </tr>
+                    }
+
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+

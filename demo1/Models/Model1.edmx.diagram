@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="6324e4117ed44eaaa1b7922b5250851e" Name="Diagram1">
+        <EntityTypeShape EntityType="QL_TOURDL_N5Model.AnhTin" Width="1.5" PointX="5.25" PointY="21" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_TOURDL_N5Model.AnhTour" Width="1.5" PointX="3" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_TOURDL_N5Model.Booking" Width="1.5" PointX="3" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_TOURDL_N5Model.ChucNang" Width="1.5" PointX="1.5" PointY="24.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_TOURDL_N5Model.DIADIEM_TOUR" Width="1.5" PointX="6" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_TOURDL_N5Model.DiemThamQuan" Width="1.5" PointX="3.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_TOURDL_N5Model.KhachHang" Width="1.5" PointX="0.75" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_TOURDL_N5Model.KhachSan" Width="1.5" PointX="3" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_TOURDL_N5Model.NhanVien" Width="1.5" PointX="0.75" PointY="13.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_TOURDL_N5Model.PhanQuyen" Width="1.5" PointX="3.75" PointY="17.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_TOURDL_N5Model.sysdiagram" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_TOURDL_N5Model.TaiKhoan" Width="1.5" PointX="1.5" PointY="17.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_TOURDL_N5Model.TinTuc" Width="1.5" PointX="3" PointY="20.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_TOURDL_N5Model.Tour" Width="1.5" PointX="0.75" PointY="5.5" IsExpanded="true" />
+        <AssociationConnector Association="QL_TOURDL_N5Model.FK__AnhTin__MaTin__5EBF139D" ManuallyRouted="false" />
+        <AssociationConnector Association="QL_TOURDL_N5Model.FK__AnhTour__MaTour__5FB337D6" ManuallyRouted="false" />
+        <AssociationConnector Association="QL_TOURDL_N5Model.FK__Booking__MaKH__60A75C0F" ManuallyRouted="false" />
+        <AssociationConnector Association="QL_TOURDL_N5Model.FK__Booking__MaNV__619B8048" ManuallyRouted="false" />
+        <AssociationConnector Association="QL_TOURDL_N5Model.FK__Booking__MaTour__628FA481" ManuallyRouted="false" />
+        <AssociationConnector Association="QL_TOURDL_N5Model.FK_PhanQuyen_ChucNang" ManuallyRouted="false" />
+        <AssociationConnector Association="QL_TOURDL_N5Model.FK__DIADIEM_T__MaTou__6383C8BA" ManuallyRouted="false" />
+        <AssociationConnector Association="QL_TOURDL_N5Model.FK__DIADIEM_TO__MaDD__6477ECF3" ManuallyRouted="false" />
+        <AssociationConnector Association="QL_TOURDL_N5Model.FK__KhachHang__UserN__656C112C" ManuallyRouted="false" />
+        <AssociationConnector Association="QL_TOURDL_N5Model.FK__NhanVien__UserNa__68487DD7" ManuallyRouted="false" />
+        <AssociationConnector Association="QL_TOURDL_N5Model.FK__TinTuc__MaNV__693CA210" ManuallyRouted="false" />
+        <AssociationConnector Association="QL_TOURDL_N5Model.FK_PhanQuyen_TaiKhoan" ManuallyRouted="false" />
+        <AssociationConnector Association="QL_TOURDL_N5Model.KHACHSAN_TOUR" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

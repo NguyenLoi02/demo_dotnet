@@ -1,0 +1,59 @@
+﻿@model List<demo1.Models.NhanVien>
+
+@{
+    ViewBag.Title = "Personnel";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="container" style="margin-top: 30px;">
+    <div class="card">
+        <div class="card-header">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Quản lý nhân sự</h3>
+                </div>
+                <div class="col-md-6">
+                    <a href="" class="btn btn-primary float-right">Thêm Mới</a>
+                </div>
+
+            </div>
+        </div>
+        <div class="card-body">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Mã nhân viên</th>
+                        <th>Họ và tên</th>
+                        <th>Giới tính</th>
+                        <th>Số điện thoại</th>
+                        <th>Địa chỉ</th>
+                        <th>Username</th>
+                        <th>Sửa</th>
+                        <th>Xóa</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.MaNV</td>
+                            <td>@item.TenNV</td>
+                            <td>@item.GioiTinh</td>
+                            <td>@item.SoDienThoai</td>
+                            <td>@item.DiaChi</td>
+                            <td>@item.UserName</td>
+                            <td>
+                                <a href="#" class="btn btn-info">Sửa</a>
+                            </td>
+                            <td>
+                                <a onclick="" href="" class="btn btn-danger">Xóa</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
